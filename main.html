@@ -4,7 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Styling with ID Selectors</title>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        #yellow {
+            background: yellow; /* Cypress will detect rgb(255,255,0) */
+            border: 1px solid green; /* rgb(0,128,0) */
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        #red {
+            background: red; /* Cypress will detect rgb(255,0,0) */
+            border: 1px solid black; /* rgb(0,0,0) */
+            padding: 10px;
+            margin: 10px 0;
+            color: white; /* better readability */
+        }
+
+        #green {
+            background: green; /* Cypress will detect rgb(0,128,0) */
+            border: 1px solid yellow; /* rgb(255,255,0) */
+            padding: 10px;
+            margin: 10px 0;
+            color: white; /* better readability */
+        }
+    </style>
 </head>
 <body>
     <p id="yellow">Paragraph-1</p>
